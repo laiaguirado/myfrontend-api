@@ -23,30 +23,29 @@
 img{
     height: 12rem;
     width: 12rem;
-    filter: brightness(1.1);
-    mix-blend-mode:multiply;
 }
 
 .game-info{
-    margin:1rem 0rem 0rem 0rem;
+    margin:1rem 0rem 0rem;
     text-align: center;
 }
 
 .game-name{
-    font-size: 25px;
+    font-size: 1.6rem;
     font-weight: bold;
     width: 13rem;
     text-align: center;
-    margin: 0rem;
+    margin: 0.5rem 0rem 0rem 0rem;
 }
 
 .game-general-info{
+    font-size: 1.3rem;
+    margin: 0rem;
+    height: 4rem;
     display: flex;
     flex-direction:row;
     justify-content:space-evenly;
     align-items: center;
-    margin: 0rem 0rem 0.5rem 0rem;
-    font-size: 20px;
 }
 
 .game-detail-info{
@@ -57,5 +56,5 @@ img{
 }
 
 .game-detail-info p{
-    margin:0rem 0.5rem 0rem 0rem;
+    margin: 0rem 0.3rem;
 }

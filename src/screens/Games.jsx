@@ -9,7 +9,7 @@ function Games() {
     const [gamesList, setGamesList] = useState({ games: [] });
     useEffect(() => {
         const fetchData = async () => {
-            const result = await axios('https://api.boardgameatlas.com/api/search?client_id=JLBr5npPhV&limit=50&order_by=rank');
+            const result = await axios('https://api.boardgameatlas.com/api/search?client_id=JLBr5npPhV&limit=48&order_by=rank');
             setGamesList(result.data);
         };
         fetchData();
@@ -18,7 +18,6 @@ function Games() {
     if (gamesList.games.length === 0) {
         return <Loading />;
     }
-    console.log(gamesList)
     return (
         <div className='games'>
             <h1>Popular Board Games</h1>

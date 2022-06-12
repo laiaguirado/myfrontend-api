@@ -3,13 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(24, 23, 23);
+  background-color: #222;
 }
 .spinner {
   height: 3em;
   width: 3em;
   border-radius: 5em;
-  border: 0.3em solid rgb(135, 135, 135);
+  border: 0.3em solid rgb(255, 255, 255);
   border-top-color: transparent;
   animation: infinite;
   animation-name: spin;

@@ -1,0 +1,18 @@
+#detail_game{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0)
+}
+
+#game{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#detail_image{
+    height: 20rem;
+    width: 20rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    /*filter: brightness(1.1);
+    mix-blend-mode:multiply;*/
+}

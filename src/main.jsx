@@ -1,10 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './index.css'
+import Games from './screens/Games'
+import DetailsGame from './screens/DetailsGame'
+import App from "./screens/App"
+import Loading from './components/Loading';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Games />}></Route>
+        <Route path="/game/:gameid" element={<DetailsGame />} />
+      </Routes>
+    </BrowserRouter >
   </React.StrictMode>
-)
+);
+
+
+

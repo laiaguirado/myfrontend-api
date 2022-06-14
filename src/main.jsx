@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './index.css'
-import Games from './screens/Games'
 import MainPage from './screens/MainPage'
 import DetailsGame from './screens/DetailsGame'
 import GamesRanking from './screens/GamesRanking'

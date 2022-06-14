@@ -1,4 +1,4 @@
-.page{
+.details-game-page{
     background-color: #222;
     margin: 0rem;
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.page #game-general-detail{
+.details-game-page #details-game-card{
     background-color: white;
     border: 0.3rem solid rgb(71, 71, 71);
     border-radius: 2rem;

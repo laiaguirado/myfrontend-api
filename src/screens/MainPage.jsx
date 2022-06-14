@@ -41,15 +41,13 @@ function MainPage() {
     return (
         <div className='main-page'>
             <div className='main-top-info'>
-                <h1>Board Games</h1>
-                <h3>These are the most popular board games widely loved by the community in terms of consistency in game page visits,
+                <h1 id='title-main-page'>Board Games</h1>
+                <h3 id='subtitle-main-page'>These are the most popular board games widely loved by the community in terms of consistency in game page visits,
                     number of ratings, mentions, and other criteria.</h3>
             </div>
-            <div className='games-orderby'>
+            <div className='main-games'>
                 <div className='gamesRankingList'>
-                    <div className='game-title' onClick={() => navigate('ranking', { replace: false })}>
-                        <h2 className='title-seccion'>Games order by Ranking:</h2>
-                    </div>
+                    <h2 className='title-section' onClick={() => navigate('ranking', { replace: false })}> Games order by Ranking:</h2>
                     <div className='scroll_horizontal'>
                         <div className='example-games'>
                             {gamesRankingList.games.map((game) => (
@@ -64,9 +62,7 @@ function MainPage() {
                     </div>
                 </div>
                 <div className='gamesRatingList'>
-                    <div className='game-title' onClick={() => navigate('rating', { replace: false })}>
-                        <h2 className='title-seccion'>Games order by Rating:</h2>
-                    </div>
+                    <h2 className='title-section' onClick={() => navigate('rating', { replace: false })}>Games order by Rating:</h2>
                     <div className='scroll_horizontal'>
                         <div className='example-games'>
                             {gamesRatingList.games.map((game) => (
@@ -81,9 +77,7 @@ function MainPage() {
                     </div>
                 </div>
                 <div className='gamesTrendingList'>
-                    <div className='game-title' onClick={() => navigate('trending', { replace: false })}>
-                        <h2 className='title-seccion'>Games order by Trending:</h2>
-                    </div>
+                    <h2 className='title-section' onClick={() => navigate('trending', { replace: false })}>Games order by Trending:</h2>
                     <div className='scroll_horizontal'>
                         <div className='example-games'>
                             {gamesTrendingList.games.map((game) => (

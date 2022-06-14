@@ -21,8 +21,8 @@ function DetailsGame() {
         return <Loading />;
     }
     return (
-        <div className='page'>
-            <div id="game-general-detail">
+        <div className='details-game-page'>
+            <div id="details-game-card">
                 {game.games.map((game) => (
                     <DetailsGameCard
                         key={game.id}

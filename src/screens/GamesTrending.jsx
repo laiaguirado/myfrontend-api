@@ -9,9 +9,9 @@ function GamesTrending() {
     const [gamesList, setGamesList] = useState({ games: [] });
 
     const navigate = useNavigate();
-    const goMainPage = ()=> navigate("/");
-    const goGamesRanking = ()=> navigate("/ranking");
-    const goGamesRating = ()=> navigate("/rating");
+    const goMainPage = () => navigate("/");
+    const goGamesRanking = () => navigate("/ranking");
+    const goGamesRating = () => navigate("/rating");
 
     const fetchDataByTrending = async () => {
         const result = await axios('https://api.boardgameatlas.com/api/search?client_id=JLBr5npPhV&limit=50&order_by=trending');
@@ -28,19 +28,17 @@ function GamesTrending() {
 
     return (
         <div className='games'>
-            <div className='top-info'>
-                <h1>Top Trending Board Games</h1>
-                <h4>These are the hottest board games that have jumped the most in number of 
+            <div className='games-top-info'>
+                <h1 id='title-games-page'>Top Trending Board Games</h1>
+                <h4 id='subtitle-games-page'>These are the hottest board games that have jumped the most in number of
                     game page visits and mentions over the past week.</h4>
                 <div className='buttons'>
+                    <button className='button-order-by' onClick={goMainPage}> 🏠 Main Page </button>
+                    <button className="button-order-by" onClick={goGamesRanking}> 🏆 Games order by ranking</button>
+                    <button className="button-order-by" onClick={goGamesRating}> ⭐ Games order by rating</button>
                 </div>
             </div>
-            <div className='buttons'>
-                <button className='order_by' onClick={goMainPage}> 🏠 Main Page </button>
-                <button className="order_by" onClick={goGamesRanking}> 🏆 Games order by ranking</button>
-                <button className="order_by" onClick={goGamesRating}> ⭐ Games order by rating</button>
-            </div>
-            <div className='gameList'>
+            <div className='gamesList'>
                 {gamesList.games.map((game) => (
                     <GameCard
                         key={game.id}

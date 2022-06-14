@@ -1,4 +1,4 @@
-.page #game-info{
+.game-detail{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -6,13 +6,13 @@
     padding: 3rem 7rem;
 }
 
-.page #detail_image{
+.game-detail #game-image{
     height: 25rem;
     width: 25rem;
     margin: 0rem 2rem 0rem 0rem ;
 }
 
-.page .game-detail-info{
+.game-detail .game-details-info{
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -24,75 +24,79 @@
     padding: 2rem 0rem 2rem 2.5rem;
 }
 
-.page .game-general-info{
+.game-detail .game-detail-top-info{
     height: auto;
     display: flex;
     flex-direction: row;
 }
 
-
-.page .game-general-info h2{
+.game-detail .game-detail-top-info .game-name{
     align-items: center;
     width: 16rem;
     font-size: 1.6rem;
     margin:1rem 0rem 1rem 0rem;
 }
 
-.page .game-general-info p{
+.game-detail .game-detail-top-info .game-rank{
     display: flex;
     align-items: center;
     justify-content: end;
     width: 5rem;
 }
 
-.page .game-price{
+.game-detail .game-price{
     font-size:1.4rem;
     width: 10rem;
     margin: 0.5rem 1.5rem 0.5rem 0rem;
 }
 
-.page .game-detail{
+.game-detail .game-detail-middle-info{
     display: flex;
     font-size: 1rem;
 }
 
-.page .game-info{
+.game-detail .game-info{
     display: flex;
     flex-direction: column;
     text-align: left;
     margin: 0rem;
 }
 
-.page .game-info p{
+.game-detail .game-info p{
     margin: 0.4rem 0rem;
 }
 
-.page .value{
-    margin-left: 1rem;
+.game-detail .game-detail-middle-info .value{
+    margin-left: 1.5rem;
 }
 
-.page a{
+.game-detail .game-detail-bottom-info{
     margin:1rem 0rem;
     cursor: pointer;
     color: #222;
 }
 
-.page .description{
+.game-detail .game-description{
     text-align: justify;
     width: 55rem;
 }
 
-.page .people{
+.game-detail .game-people{
     display: flex;
     flex-direction: column;
     margin: 0rem;
 }
 
-.page .people .publisher, .page .people .designer, .page .people .artists{
+.game-detail .game-people .publisher, .game-detail .game-people .designer, .game-detail .game-people .artists{
     margin: 0.3rem 0rem;
 }
 
-.page .people .artists ul{
+.game-detail .game-people a{
+    cursor: pointer;
+    color: #222;
+}
+
+.game-detail .game-people .artists ul{
     list-style-type: circle;
     margin: 0.5rem;
 }

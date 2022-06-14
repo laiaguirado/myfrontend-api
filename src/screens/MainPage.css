@@ -1,0 +1,61 @@
+.main-page{
+    background-color: #222;
+    padding-bottom: 5rem;
+}
+
+.main-page .main-top-info{
+    padding-left: 6rem;
+
+}
+
+.main-page h1, .main-page h3{
+    color: white;
+    padding: 1rem 0rem 0rem 0rem;
+    margin:0rem;
+}
+
+.main-page h3{
+    font-weight: normal;
+}
+
+.main-page .gamesRankingList,.main-page .gamesRatingList,.main-page .gamesTrendingList{
+    margin: 0rem 9.5rem 0rem 9.5rem;
+}
+
+.main-page .game-title{
+    color: white;
+    text-align: left;
+    margin-top: 3rem;
+}
+
+.main-page .title-seccion{
+    margin: 0rem;
+}
+
+.main-page .title-seccion:hover{
+    cursor: pointer;
+    color: rgba(216, 216, 216, 0.645);
+}
+
+.main-page .scroll_horizontal {
+    width: auto;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.main-page .example-games{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+}
+
+.main-page .game-card{
+    height: 25rem;
+}
+
+.main-page .game-card:hover{
+    transform:none;
+}  
+

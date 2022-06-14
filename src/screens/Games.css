@@ -2,20 +2,53 @@
     background-color: #222;
 }
 
-h1,h4{
+.games .top-info{
+    padding-left: 6rem;
+}
+
+.games h1,.games h4{
     color: white;
-    padding: 1rem 0rem 0rem 6rem;
+    padding: 1rem 0rem 0rem 0rem;
     margin:0rem;
 }
 
-h4{
-    padding: 1rem 0rem 1rem 6rem;
+.games h4{
+    padding: 1rem 0rem 1rem 0rem;
 }
 
-.gameList{
+.games .gameList{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+}
+
+.games .buttons{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.games .buttons p{
+    display: flex;
+    align-items: center;
+}
+
+.games .order_by{
+    cursor: pointer;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: auto;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid hsla(0, 2%, 83%, 0.655);
+    margin: 1.2rem 0.5rem 1.2rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+ .games .order_by:hover{
+    background-color: hsla(0, 2%, 83%, 0.655);
+    border: 2px solid rgba(255, 255, 255, 0.53);
+    transform: scale(1.1);
 }
 
 

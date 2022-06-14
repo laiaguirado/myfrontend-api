@@ -5,7 +5,7 @@
     align-items: center;
     padding: 2.5rem 1.5rem;
     margin: 0.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: rgb(255, 255, 255);
     border-color: black;
     border: 4px solid hsla(0, 2%, 83%, 0.655);
@@ -20,25 +20,29 @@
     transform: scale(1.1);
 }
 
-img{
+.game-card img{
     height: 12rem;
     width: 12rem;
 }
 
-.game-info{
+.game-card .game-info{
     margin:1rem 0rem 0rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.game-name{
-    font-size: 1.6rem;
+.game-card .game-name{
+    font-size: 1.3rem;
     font-weight: bold;
-    width: 13rem;
+    width: 15rem;
+    height: auto;
     text-align: center;
-    margin: 0.5rem 0rem 0rem 0rem;
+    margin: 0.5rem 0rem 1rem 0rem;
 }
 
-.game-general-info{
+.game-card .game-general-info{
     font-size: 1.3rem;
     margin: 0rem;
     height: 4rem;
@@ -48,13 +52,14 @@ img{
     align-items: center;
 }
 
-.game-detail-info{
+.game-card .game-detail-info{
     display: flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    height: 3rem;
 }
 
-.game-detail-info p{
+.game-card .game-detail-info p{
     margin: 0rem 0.3rem;
 }
